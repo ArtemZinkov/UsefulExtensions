@@ -12,6 +12,10 @@
 		5981E1B12328520F00EAEFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5981E1AF2328520F00EAEFBE /* Main.storyboard */; };
 		5981E1B32328521000EAEFBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5981E1B22328521000EAEFBE /* Assets.xcassets */; };
 		5981E1B62328521000EAEFBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5981E1B42328521000EAEFBE /* LaunchScreen.storyboard */; };
+		5981E1BF232852D600EAEFBE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981E1BE232852D600EAEFBE /* UIView.swift */; };
+		5981E1C1232855F900EAEFBE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981E1C0232855F900EAEFBE /* UIColor.swift */; };
+		5981E1C623285D5A00EAEFBE /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981E1C523285D5A00EAEFBE /* UITableView.swift */; };
+		5981E1C8232861FA00EAEFBE /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981E1C7232861FA00EAEFBE /* UICollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		5981E1B22328521000EAEFBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5981E1B52328521000EAEFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5981E1B72328521000EAEFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5981E1BE232852D600EAEFBE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5981E1C0232855F900EAEFBE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		5981E1C523285D5A00EAEFBE /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		5981E1C7232861FA00EAEFBE /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		5981E1AA2328520F00EAEFBE /* UsefulExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				5981E1AB2328520F00EAEFBE /* AppDelegate.swift */,
+				5981E1C423285D4900EAEFBE /* Extensions */,
 				5981E1AD2328520F00EAEFBE /* ViewController.swift */,
 				5981E1AF2328520F00EAEFBE /* Main.storyboard */,
+				5981E1BD2328529A00EAEFBE /* Supporting Files */,
+			);
+			path = UsefulExtensions;
+			sourceTree = "<group>";
+		};
+		5981E1BD2328529A00EAEFBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5981E1AB2328520F00EAEFBE /* AppDelegate.swift */,
 				5981E1B22328521000EAEFBE /* Assets.xcassets */,
 				5981E1B42328521000EAEFBE /* LaunchScreen.storyboard */,
 				5981E1B72328521000EAEFBE /* Info.plist */,
 			);
-			path = UsefulExtensions;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5981E1C423285D4900EAEFBE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5981E1BE232852D600EAEFBE /* UIView.swift */,
+				5981E1C0232855F900EAEFBE /* UIColor.swift */,
+				5981E1C523285D5A00EAEFBE /* UITableView.swift */,
+				5981E1C7232861FA00EAEFBE /* UICollectionView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5981E1C8232861FA00EAEFBE /* UICollectionView.swift in Sources */,
 				5981E1AE2328520F00EAEFBE /* ViewController.swift in Sources */,
+				5981E1C1232855F900EAEFBE /* UIColor.swift in Sources */,
+				5981E1C623285D5A00EAEFBE /* UITableView.swift in Sources */,
+				5981E1BF232852D600EAEFBE /* UIView.swift in Sources */,
 				5981E1AC2328520F00EAEFBE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE5R4U2ZLM;
-				INFOPLIST_FILE = UsefulExtensions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UsefulExtensions/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE5R4U2ZLM;
-				INFOPLIST_FILE = UsefulExtensions/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UsefulExtensions/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
