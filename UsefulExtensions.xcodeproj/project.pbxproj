@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		594A35C6232AB89D001B0DBD /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A35C5232AB89D001B0DBD /* Collection.swift */; };
 		5981E1AC2328520F00EAEFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981E1AB2328520F00EAEFBE /* AppDelegate.swift */; };
 		5981E1AE2328520F00EAEFBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981E1AD2328520F00EAEFBE /* ViewController.swift */; };
 		5981E1B12328520F00EAEFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5981E1AF2328520F00EAEFBE /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		594A35C5232AB89D001B0DBD /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		5981E1A82328520F00EAEFBE /* UsefulExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsefulExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5981E1AB2328520F00EAEFBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5981E1AD2328520F00EAEFBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5981E1C0232855F900EAEFBE /* UIColor.swift */,
 				5981E1C523285D5A00EAEFBE /* UITableView.swift */,
 				5981E1C7232861FA00EAEFBE /* UICollectionView.swift */,
+				594A35C5232AB89D001B0DBD /* Collection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5981E1C8232861FA00EAEFBE /* UICollectionView.swift in Sources */,
+				594A35C6232AB89D001B0DBD /* Collection.swift in Sources */,
 				5981E1AE2328520F00EAEFBE /* ViewController.swift in Sources */,
 				5981E1C1232855F900EAEFBE /* UIColor.swift in Sources */,
 				5981E1C623285D5A00EAEFBE /* UITableView.swift in Sources */,
