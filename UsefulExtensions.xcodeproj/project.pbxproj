@@ -20,6 +20,13 @@
 		5981E1CA2328654100EAEFBE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981E1C92328654100EAEFBE /* APIManager.swift */; };
 		AC1DF2BA265C1D7800ABE24C /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2B8265C1D7800ABE24C /* DraggableView.swift */; };
 		AC1DF2BB265C1D7800ABE24C /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2B9265C1D7800ABE24C /* ResizableView.swift */; };
+		AC1DF2C0265C1E2300ABE24C /* CustomTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2BE265C1E2300ABE24C /* CustomTransitionDelegate.swift */; };
+		AC1DF2C1265C1E2300ABE24C /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2BF265C1E2300ABE24C /* CustomPresentationController.swift */; };
+		AC1DF2C3265C1EB200ABE24C /* CustomTransitionScreenCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2C2265C1EB200ABE24C /* CustomTransitionScreenCase.swift */; };
+		AC1DF2C5265C1EE500ABE24C /* GlobalAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2C4265C1EE500ABE24C /* GlobalAliases.swift */; };
+		AC1DF2C8265C1FB700ABE24C /* Applicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2C7265C1FB700ABE24C /* Applicable.swift */; };
+		AC1DF2CE265C204000ABE24C /* SlidePresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF2CB265C204000ABE24C /* SlidePresentationAnimationController.swift */; };
+		AC778100265C20A5008D793D /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7780FF265C20A5008D793D /* Comparable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		5981E1C92328654100EAEFBE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		AC1DF2B8265C1D7800ABE24C /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		AC1DF2B9265C1D7800ABE24C /* ResizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
+		AC1DF2BE265C1E2300ABE24C /* CustomTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionDelegate.swift; sourceTree = "<group>"; };
+		AC1DF2BF265C1E2300ABE24C /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		AC1DF2C2265C1EB200ABE24C /* CustomTransitionScreenCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionScreenCase.swift; sourceTree = "<group>"; };
+		AC1DF2C4265C1EE500ABE24C /* GlobalAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAliases.swift; sourceTree = "<group>"; };
+		AC1DF2C7265C1FB700ABE24C /* Applicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicable.swift; sourceTree = "<group>"; };
+		AC1DF2CB265C204000ABE24C /* SlidePresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidePresentationAnimationController.swift; sourceTree = "<group>"; };
+		AC7780FF265C20A5008D793D /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,9 @@
 		5981E1AA2328520F00EAEFBE /* UsefulExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				AC1DF2C4265C1EE500ABE24C /* GlobalAliases.swift */,
+				AC1DF2C6265C1FA900ABE24C /* Protocols */,
+				AC1DF2BC265C1DC800ABE24C /* Flows */,
 				AC1DF2B7265C1D6100ABE24C /* Views */,
 				5981E1C423285D4900EAEFBE /* Extensions */,
 				5981E1C92328654100EAEFBE /* APIManager.swift */,
@@ -99,6 +116,7 @@
 				5981E1C523285D5A00EAEFBE /* UITableView.swift */,
 				5981E1C7232861FA00EAEFBE /* UICollectionView.swift */,
 				594A35C5232AB89D001B0DBD /* Collection.swift */,
+				AC7780FF265C20A5008D793D /* Comparable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -110,6 +128,33 @@
 				AC1DF2B9265C1D7800ABE24C /* ResizableView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AC1DF2BC265C1DC800ABE24C /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				AC1DF2BD265C1DCD00ABE24C /* SlideTransitionDelegate */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		AC1DF2BD265C1DCD00ABE24C /* SlideTransitionDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AC1DF2CB265C204000ABE24C /* SlidePresentationAnimationController.swift */,
+				AC1DF2C2265C1EB200ABE24C /* CustomTransitionScreenCase.swift */,
+				AC1DF2BF265C1E2300ABE24C /* CustomPresentationController.swift */,
+				AC1DF2BE265C1E2300ABE24C /* CustomTransitionDelegate.swift */,
+			);
+			path = SlideTransitionDelegate;
+			sourceTree = "<group>";
+		};
+		AC1DF2C6265C1FA900ABE24C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC1DF2C7265C1FB700ABE24C /* Applicable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,10 +230,17 @@
 			files = (
 				AC1DF2BB265C1D7800ABE24C /* ResizableView.swift in Sources */,
 				5981E1C8232861FA00EAEFBE /* UICollectionView.swift in Sources */,
+				AC1DF2CE265C204000ABE24C /* SlidePresentationAnimationController.swift in Sources */,
+				AC1DF2C3265C1EB200ABE24C /* CustomTransitionScreenCase.swift in Sources */,
+				AC1DF2C5265C1EE500ABE24C /* GlobalAliases.swift in Sources */,
 				594A35C6232AB89D001B0DBD /* Collection.swift in Sources */,
 				5981E1AE2328520F00EAEFBE /* ViewController.swift in Sources */,
 				AC1DF2BA265C1D7800ABE24C /* DraggableView.swift in Sources */,
+				AC1DF2C8265C1FB700ABE24C /* Applicable.swift in Sources */,
 				5981E1C1232855F900EAEFBE /* UIColor.swift in Sources */,
+				AC1DF2C0265C1E2300ABE24C /* CustomTransitionDelegate.swift in Sources */,
+				AC1DF2C1265C1E2300ABE24C /* CustomPresentationController.swift in Sources */,
+				AC778100265C20A5008D793D /* Comparable.swift in Sources */,
 				5981E1C623285D5A00EAEFBE /* UITableView.swift in Sources */,
 				5981E1BF232852D600EAEFBE /* UIView.swift in Sources */,
 				5981E1AC2328520F00EAEFBE /* AppDelegate.swift in Sources */,

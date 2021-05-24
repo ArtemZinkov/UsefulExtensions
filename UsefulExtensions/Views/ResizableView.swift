@@ -1,10 +1,3 @@
-//
-//  ResizableView.swift
-//  Test
-//
-//  Created by Artem Zinkov on 11.03.2020.
-//  Copyright © 2020 Artem Zinkov. All rights reserved.
-//
 
 import UIKit
 

@@ -1,16 +1,5 @@
-//
-//  APIManager.swift
-//  UsefulExtensions
-//
-//  Created by Артём Зиньков on 9/11/19.
-//  Copyright © 2019 Artem Zinkov. All rights reserved.
-//
 
 import Foundation
-
-typealias SuccessCompletion = ()->Void
-typealias SuccessCompletionWithObject<T> = (T)->Void
-typealias ErrorCompletion = (Error) -> Void
 
 final class APIManager {
  
@@ -55,8 +44,8 @@ private extension APIManager {
                                to url: URL,
                                with parameters: [String: String]? = nil,
                                and headers: [String: String]? = nil,
-                               _ successCompletion: SuccessCompletionWithObject<T>? = nil,
-                               _ errorCompletion: ErrorCompletion? = nil) {
+                               _ successCompletion: GenericCallback<T>? = nil,
+                               _ errorCompletion: GenericCallback<Error>? = nil) {
         var mutableUrl = url
         if var urlComponents = URLComponents(url: mutableUrl, resolvingAgainstBaseURL: true), parameters != nil {
             urlComponents.queryItems = []
