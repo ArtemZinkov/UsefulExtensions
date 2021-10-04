@@ -5,32 +5,32 @@ import UIKit
  - In UIViewController that need to be presented customly - add snipet
  
  ```
- var customTransitionDelegate: NPSTransitionDelegate? {
+ var customTransitionDelegate: CustomTransitionScreenCase? {
      didSet {
          transitioningDelegate = customTransitionDelegate
      }
  }
  ```
 
-And set to this property `CustomTransitionDelegate` instanse
+And set to this property `CustomTransitionDelegate` instance
  
  */
 
 final class CustomTransitionDelegate: NSObject, UIViewControllerTransitioningDelegate {
-    var npsCase: CustomTransitionScreenCase {
+    var screenCase: CustomTransitionScreenCase {
         didSet {
-            presentingController?.screenCase = npsCase
+            presentingController?.screenCase = screenCase
         }
     }
     private weak var presentingController: CustomPresentationController?
 
     init(npsCase: CustomTransitionScreenCase) {
-        self.npsCase = npsCase
+        self.screenCase = npsCase
         super.init()
     }
 
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return CustomPresentationController(npsCase: npsCase,
+        return CustomPresentationController(npsCase: screenCase,
                                          presentedViewController: presented,
                                          presenting: presenting)
             .applying { presentingController = $0 }
